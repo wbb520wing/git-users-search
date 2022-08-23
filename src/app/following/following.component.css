@@ -1,0 +1,36 @@
+.con {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  margin: auto;
+}
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:2rem;
+
+}
+
+
+.followers{
+  border: 1px dotted grey;
+  padding:1rem
+
+}
+
+button {
+  width: 30%;
+  height: 2rem;
+  margin: auto;
+  border-radius: 5px;
+  background-color: rgb(85, 77, 158);
+  color: white;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+.notFound {
+  text-align: center;
+}

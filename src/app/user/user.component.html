@@ -1,0 +1,7 @@
+<div class="user" *ngIf="username">
+  <img  [src]='image' alt="profile image" height="100" width="100"/>
+  <p>Username: {{username}}</p>
+  <div *ngIf="followers >= 0">
+    <p> Followers: {{followers}}</p>
+  </div>
+</div>

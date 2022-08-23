@@ -1,0 +1,16 @@
+<div class="con">
+  <div class="container">
+    <div class="followers" *ngFor="let follower of followers">
+      <app-user
+        class="user"
+        [username]="follower.username"
+        [image]="follower.image"
+        [followers]="-1"
+      ></app-user>
+    </div>
+  </div>
+  <div class="notFound"*ngIf="followers.length === 0">
+    <h1>No Followers Found!</h1>
+  </div>
+  <button (click)="loadMore()">Load More...</button>
+</div>
